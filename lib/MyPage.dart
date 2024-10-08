@@ -67,7 +67,7 @@ class _MyPageState extends State<MyPage> {
 
         // 로그아웃 시 로그인 페이지로 이동
         Navigator.pushReplacementNamed(context, '/navigator');
-      } else if(response.statusCode == 302) {
+      } else if(response.statusCode == 302) { // 302 에러
         var redirectUrl = response.headers['location'];
         if(redirectUrl != null) {
           print("Redirecting to: $redirectUrl");
