@@ -4,6 +4,8 @@ import 'package:login_page/MyPage.dart';
 import 'package:login_page/Navigation.dart';
 import 'package:login_page/SignIn.dart';
 
+import 'Community.dart';
+
 void main() async {
   runApp(MyApp());
 }
@@ -19,6 +21,7 @@ class MyApp extends StatelessWidget {
         '/': (context) => HomeScreen(),
         '/infra_info': (context) => MyPage(),
         '/navigator': (context) => SignIn(),
+        '/search_missing_person': (context) => Community(),
         '/message': (context) => Navigation()
       },
     );
